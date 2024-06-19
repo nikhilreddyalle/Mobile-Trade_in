@@ -1,0 +1,128 @@
+use trading
+db.users.drop()
+db.trades.drop()
+db.createCollection("users")
+db.users.insertMany([{
+  "_id": {
+    "$oid": "64485054f0fc7070d653aae5"
+  },
+  "firstName": "Nikhil",
+  "lastName": "Reddy",
+  "email": "nikhil@gmail.com",
+  "password": "$2b$10$0g9El4Y/gEpREcNN5P6P3eV0p0co07mI.OsfRxjHmOhNTEHyiVhH2",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64485090f0fc7070d653aae7"
+  },
+  "firstName": "Srikar",
+  "lastName": "N",
+  "email": "srikar@gmail.com",
+  "password": "$2b$10$094nulkVqwCAXj4QVTFJ4OI1MlYrr.xN/LoD2DlCERfpFLxEUOxwa",
+  "__v": 0
+}])
+
+
+
+
+db.createCollection("trades")
+
+
+
+db.trades.insertMany([{
+  "_id": {
+    "$oid": "6448516bf0fc7070d653aaee"
+  },
+  "brand": "Apple",
+  "model": "14 pro max",
+  "category": "14 Series",
+  "color": "gold",
+  "varient": "512GB",
+  "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6487/6487411_sd.jpg",
+  "status": "Available",
+  "condition": "good",
+  "owner": {
+    "$oid": "64485054f0fc7070d653aae5"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644851d8f0fc7070d653aaf2"
+  },
+  "brand": "Apple",
+  "model": "14",
+  "category": "14 Series",
+  "color": "space grey",
+  "varient": "256GB",
+  "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6505/6505118_sd.jpg",
+  "status": "Available",
+  "condition": "excellent",
+  "owner": {
+    "$oid": "64485054f0fc7070d653aae5"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64485241f0fc7070d653aaf6"
+  },
+  "brand": "Apple",
+  "model": "13 pro",
+  "category": "13 Series",
+  "color": "gold",
+  "varient": "512GB",
+  "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6443/6443320_sd.jpg",
+  "status": "Available",
+  "condition": "good",
+  "owner": {
+    "$oid": "64485054f0fc7070d653aae5"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6448543df0fc7070d653ab07"
+  },
+  "brand": "Apple",
+  "model": "14 pro",
+  "category": "14 Series",
+  "color": "gold",
+  "varient": "256GB",
+  "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6487/6487391_sd.jpg",
+  "status": "Available",
+  "condition": "good",
+  "owner": {
+    "$oid": "64485090f0fc7070d653aae7"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64485471f0fc7070d653ab0b"
+  },
+  "brand": "Apple",
+  "model": "13",
+  "category": "13 Series",
+  "color": "gold",
+  "varient": "256GB",
+  "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6443/6443072_sd.jpg",
+  "status": "Available",
+  "condition": "poor",
+  "owner": {
+    "$oid": "64485090f0fc7070d653aae7"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644854c7f0fc7070d653ab13"
+  },
+  "brand": "Apple",
+  "model": "13 pro max",
+  "category": "13 Series",
+  "color": "silver",
+  "varient": "512GB",
+  "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6443/6443337_sd.jpg",
+  "status": "Available",
+  "condition": "good",
+  "owner": {
+    "$oid": "64485090f0fc7070d653aae7"
+  },
+  "__v": 0
+}])

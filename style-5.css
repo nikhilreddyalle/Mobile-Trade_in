@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+.header {
+   display: flex; 
+   align-items: center;
+   position :fixed;
+   background-color: rgb(120, 120, 115);
+   height: 170px; 
+   width: 100%;
+   
+
+}
+#logo {
+    height: 90px;
+    width : 120px;
+    float: left;
+    position: fixed;
+    top: 10px;
+    left:10px;
+
+}
+nav{
+    flex: 1;
+    text-align: right;
+    float: right;
+    
+    
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    position: fixed;
+    top: 90px;
+    right:10px;
+    float: none;
+   
+
+}
+nav li{
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+    
+    
+}
+nav ul li a:hover{
+    text-decoration: none;
+     background-color: rgb(0, 0, 0);
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background: #333;
+    padding: 0 20px;
+    /*background-image: linear-gradient(to right, #ccc, #333, #ccc);*/
+}
+#E2{
+    /* padding-left: 10px; */
+    
+    position:fixed;
+    text-decoration: none;
+    top: 128px;
+    font-size: 23px;
+    /* left:10px; */
+    
+    
+}
+#E2 a{
+text-decoration: none;
+color: white;
+}
+#E2 a:hover{
+    background-color: rgb(238, 159, 12);
+    }
+
+.line
+{
+
+border: 1px solid black;
+margin-top: 49pt;
+width: 100%;
+}
+
+.wrapper{
+    max-width: 600px;
+    width: 100%;
+    background-color: rgb(120, 120, 115);
+    background-image: url("https://www.apple.com/ac/structured-data/images/open_graph_logo.png?202110180743");
+    background-size: 500px 300px;
+    margin: 50px auto;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+    padding: 10px;
+}
+  
+.wrapper .form{
+    width: 100%;
+}
+  
+.wrapper .form .inputfield{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.wrapper .form .inputfield label{
+    width: 400px;
+    margin-right: 10px auto;
+   font-size: 16px;
+}
+ 
+.wrapper .form .inputfield .input{
+   width: 100%;
+   outline: none;
+   border: 1px solid #d5dbd9;
+   font-size: 15px;
+   padding: 8px 10px;
+   border-radius: 3px;
+}
+ 
+.wrapper .form .inputfield .custom_select{
+    position: relative;
+   width: 100%;
+   height: 37px;
+}
+.wrapper .form .inputfield .custom_select:before{
+    content: "";
+    -webkit-appearance: none;
+    -moz-appearance:   none;
+    appearance:        none;
+    outline: none;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #d5dbd9 transparent transparent transparent;
+    pointer-events: none;
+}
+  
+.wrapper .form .inputfield .custom_select select{
+    -webkit-appearance: none;
+    -moz-appearance:   none;
+    appearance:        none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 1px solid #d5dbd9;
+    border-radius: 3px;
+}
+.wrapper .form .inputfield .btn{
+    width: 100%;
+     padding: 8px 10px;
+    font-size: 15px; 
+    border: 0px;
+    background:  #0c0c0cfd;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+}
+  
+.wrapper .form .inputfield .btn:hover{
+    background: #d0ff58;
+}
+
+#foot {
+    /*text-align: center;*/
+    padding: 3px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    
+    bottom: 0%;
+    width: 100%;
+    height: 70px;
+} 
+#foot ul li {
+    display: inline-block;
+    padding:20px 15px;
+}
+#foot ul li a:hover{
+    text-decoration: none;
+     background-color: rgb(0, 0, 0);
+}
+#foot ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+
+
+#main {
+    background-image: url("https://www.macworld.com/wp-content/uploads/2023/01/apple_iphone_12_and_12pro_review_3-2.jpg?quality=50&strip=all&w=1024");
+    background-size: 1500px 900px;
+
+    text-align: center;
+    padding-top: 15%;
+   
+
+} 
+#para{
+    color : white;
+    line-height: 1.5;
+}
+.abc
+{
+    float: right;
+}
+#img1
+{
+    height: 30px;
+    width: 30px;
+}
